@@ -1,0 +1,23 @@
+//Creé par : Sirri Rayane GL
+
+Algorithme PGCD
+Variables divis, divid, r, a, b : Entier
+Debut :
+    Ecrire("Enter deux valeurs pour PGCD") //Affichage
+    Lire(divis) //Lecture de divis
+    Lire(divid) //Lecture de divid
+
+    a = divis
+    b = divid
+
+    TantQue (divid<>0)
+        r = divis mod divid //Calcul du rest de la division entière
+
+        Ecrire(divis, " = ", divid, " x ", divis div divid, " + ", r)
+
+        divis = divid
+        divid = r
+    FinTantQue
+
+    Ecrire("PGCD(",a, ",", b, ") = ", divis)
+Fin
