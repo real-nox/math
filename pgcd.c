@@ -30,6 +30,10 @@ int main() {
         divis = divid; //Le diviseur devient dividende
         divid = r;//Le dividende devient le reste
     }
-    
-    printf("pgcd(%d,%d) = %d\n", a, b, divis);
+    if (divis == 1) {
+        printf("%d et %d sont premiers entre eux car pgcd(%d, %d) = 1",a,b,a,b);
+    } else {
+        printf("pgcd(%d,%d) = %d\n", a, b, divis);
+    } 
+
 }
