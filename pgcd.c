@@ -42,11 +42,11 @@ int main() {
     
     // Affichage du message pour l'utilisateur
     printf("Veuillez entrer les nombres pour le PGCD et l'equation :\n");
-    printf("Entrer le premier nombre (a) :\t");
+    printf("Entrer le premier nombre a :\t");
     scanf("%d", &a);
-    printf("Entrer le deuxieme nombre (b) :\t");
+    printf("Entrer le deuxieme nombre b :\t");
     scanf("%d", &b);
-    printf("Entrer le troisieme nombre (c) :\t");
+    printf("Entrer le troisieme nombre c :\t");
     scanf("%d", &c);
     
     int d = PGCD(a, b);
