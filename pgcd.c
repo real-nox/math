@@ -3,7 +3,7 @@
 
 int PGCD(int divis, int divid) {
     int r;
-    printf("Calcul du PGCD ztape par ztape :\n");
+    printf("Calcul du PGCD etape par etape :\n");
     
     // Boucle tant que le reste n'est pas nul
     while (divid != 0) {
