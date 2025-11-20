@@ -76,7 +76,7 @@ int main() {
     
     // Affichage des solutions générales (corrigé : ajouté les %d manquants et la syntaxe)
     printf("Les solutions entieres de %dx + %dy = %d sont :\n", a, b, c);
-    printf("(x, y) = (%d + %d x k, %d - %d x k)\n", x_part, b / d, y_part, a / d);
+    printf("(x, y) = (%d - %d x k, %d + %d x k)\n", x_part, a / d, y_part, b / d);
     printf("ou k est un entier relatif.\n");
     
     return 0;
