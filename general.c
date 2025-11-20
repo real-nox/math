@@ -126,7 +126,7 @@ int main()
     {
         do
         {
-            printf("\n\nProgramme Math Arithmetique\n1 : PGCD\n2 : PGCD Etendue\n3 : PPCM\n4 : Nombres premiers\n\n0 : Quitter\n");
+            printf("\n\nProgramme Math Arithmetique | Rayane Sirri GL\n1 : PGCD\n2 : PGCD Etendue\n3 : PPCM\n4 : Nombres premiers\n\n0 : Quitter\n");
             scanf("%d", &option);
         } while (option > 5);
 
