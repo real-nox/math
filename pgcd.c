@@ -72,7 +72,7 @@ int main() {
     
     printf("Une solution particuliere est :\n");
     printf("x = %d, y = %d\n", x_part, y_part);
-    printf("Verification : %d x %d + %d x %d = %d\n\n", a, x_part, b, y_part, a * x_part + b * y_part);
+    printf("Verification : %d x %d + %d x %d = %d\n\n", b, x_part, a, y_part, a * y_part + b * x_part);
     
     // Affichage des solutions générales (corrigé : ajouté les %d manquants et la syntaxe)
     printf("Les solutions entieres de %dx + %dy = %d sont :\n", a, b, c);
