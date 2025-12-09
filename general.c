@@ -15,7 +15,7 @@ int PGCD(int divis, int divid)
         // Affichage correct : divis = divid * quotient + reste
         printf("%d = %d * %d + %d\n", divis, divid, divis / divid, r);
 
-        // Mise à jour : le diviseur devient dividende, le reste devient diviseur
+        // Mise à jour : le diviseur devient dividende, le reste devient dividende
         divis = divid;
         divid = r;
     }
@@ -126,14 +126,13 @@ int main()
     {
         do
         {
-            printf("\n\nProgramme Math Arithmetique | Rayane Sirri GL\n1 : PGCD\n2 : PGCD Etendue\n3 : PPCM\n4 : Nombres premiers\n\n0 : Quitter\n");
+            printf("\n\nProgramme Math Arithmetique | Rayane Sirri GL\n1 : PGCD\n2 : PGCD Etendue\n3 : PGCD de trois variables\n4 : PPCM\n5 : Nombres premiers\n\n0 : Quitter\n");
             scanf("%d", &option);
-        } while (option > 5);
+        } while (option > 6);
 
         switch (option)
         {
         case 1:
-
             // Affichage du message pour l'utilisateur
             printf("Veuillez entrer les nombres pour le PGCD et l'equation :\n");
             printf("Entrer le premier nombre a :\t");
@@ -143,10 +142,8 @@ int main()
 
             d = PGCD(a, b);
             printf("PGCD(%d, %d) = %d\n\n", a, b, d);
-            /* code */
             break;
         case 2:
-
             // Affichage du message pour l'utilisateur
             printf("Veuillez entrer les nombres pour le PGCD et l'equation :\n");
             printf("Entrer le premier nombre a :\t");
@@ -188,11 +185,25 @@ int main()
             printf("ou k est un entier relatif.\n");
             break;
         case 3:
+            // Affichage du message pour l'utilisateur
+            printf("Veuillez entrer les nombres pour le PGCD(a,b,c) :\n");
+            printf("Entrer le premier nombre a :\t");
+            scanf("%d", &a);
+            printf("Entrer le deuxieme nombre b :\t");
+            scanf("%d", &b);
+            printf("Entrer le troisieme nombre c :\t");
+            scanf("%d", &c);
+
+            d = PGCD(a, b);
+            int res = PGCD(d, c);
+            printf("PGCD(%d, %d, %d) = %d\n\n", a, b, c, res);
+            break;
+        case 4:
             printf("Entrer ppcm(a, b) :\t");
             scanf("%d %d", &a, &b);
             PPCM(a, b);
             break;
-        case 4:
+        case 5:
             Premier();
             break;
         default:
