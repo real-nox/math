@@ -74,16 +74,16 @@ int main()
 
             // Calcul de la solution particulière
             int k = c / d;
-            int x_part = y * k;
-            int y_part = x * k;
+            int x_part = x * k;
+            int y_part = y * k;
 
             printf("[:] Une solution particuliere est :\n");
             printf("->  x = %d, y = %d\n", x_part, y_part);
-            printf("[:] Verification : %d x %d + %d x %d = %d\n\n", b, x_part, a, y_part, a * y_part + b * x_part);
+            printf("[:] Verification : %d x %d + %d x %d = %d\n\n", a, x_part, b, y_part, a * x_part + b * y_part);
 
             // Affichage des solutions générales (corrigé : ajouté les %d manquants et la syntaxe)
             printf("[:] Les solutions entieres de %dx + %dy = %d sont :\n", a, b, c);
-            printf("-> (x, y) = (%d - %d x k, %d + %d x k)", x_part, a / d, y_part, b / d);
+            printf("-> (x, y) = (%d + %d x k, %d - %d x k)", x_part, b / d, y_part, a / d);
             printf(" ou k est un entier relatif.\n\n");
             break;
         case 3:
@@ -98,7 +98,7 @@ int main()
             scanf("%d", &c);
 
             d = PGCD(a, b);
-            int res = PGCD(d, c);
+            int res = PGCD(c, d);
             printf("-> PGCD(%d, %d, %d) = %d\n\n", a, b, c, res);
             break;
         case 4:
